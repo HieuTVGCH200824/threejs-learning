@@ -5,8 +5,10 @@ import "./App.css";
 export default function App() {
   return (
     <div className="overflow-hidden max-w-screen ">
-      <Potion />
-      <Shiba />
+      <div className="flex flex-col items-center gap-6">
+        <Potion />
+        <Shiba />
+      </div>
     </div>
   );
 }
