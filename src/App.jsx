@@ -5,7 +5,7 @@ import { Suspense, useRef } from "react";
 import "./App.css";
 
 const Model = () => {
-  const gltf = useLoader(GLTFLoader, "./potiontest.glb");
+  const gltf = useLoader(GLTFLoader, "/potiontest.glb");
   const modelRef = useRef();
 
   useFrame(({ clock }) => {
