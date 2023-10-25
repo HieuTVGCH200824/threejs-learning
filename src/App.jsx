@@ -21,7 +21,7 @@ const Model = () => {
 
 export default function App() {
   return (
-    <div className="h-screen w-screen">
+    <div className="h-[80vh] ">
       <Canvas>
         <Suspense fallback={null}>
           <Model />
