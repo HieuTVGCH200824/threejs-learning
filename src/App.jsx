@@ -1,7 +1,7 @@
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { Suspense, useRef } from "react";
+import { useRef } from "react";
 import "./App.css";
 
 const Model = () => {
@@ -23,9 +23,8 @@ export default function App() {
   return (
     <div className="h-[80vh] ">
       <Canvas>
-        <Suspense fallback={null}>
-          <Model />
-        </Suspense>
+        <ambientLight intensity={1} />
+        <Model />
       </Canvas>
     </div>
   );
